@@ -6,6 +6,9 @@
 body{
     background-image: url(bg.jpg);
 }
+::-webkit-scrollbar {
+    display: none;
+}
 .todo
 {
     width: 26%;
@@ -13,8 +16,9 @@ body{
     position: relative;
     left: 59%;
     top: 36%;
-    background-color: rgba(255, 21, 68, 0.631);
+    background-color: rgba(255, 155, 175, 0.631);
     border-radius: 50px;
+    box-shadow: 0 0 100px rgb(255, 45, 45);
 }
 h1{
     font-size: 60px;
@@ -34,6 +38,7 @@ h1{
     padding-left: 15px;
     border: 2px black solid;
     outline: none;
+    background-color: rgba(255, 255, 255, 0.498);
 }
 #inputbutton{
     position: relative;
@@ -43,6 +48,7 @@ h1{
     top: 33%;
     border: 2px black solid;
     cursor: pointer;
+    background-color: rgba(46, 0, 0, 0.278);
 }
 .output{
     border-radius: 50px;
@@ -69,29 +75,35 @@ h1{
 {
     position: relative;
     top: 10%;
-    left: 10%;
-    width: 80%;
-    height: 100%;
+    width: 95%;
+    height: 90%;
     font-size: 27px;
-    /* background-color: yellow; */
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+}
+li{
+    margin-left: 40px;
 }
 #delete
 {
     position: relative;
     padding: 10px 20px 10px 20px;
     left: 68%;
-    top: 4%;
+    top: 14%;
     border-radius: 50px;
     border: 2px black solid;
     cursor: pointer;
+    background-color: rgba(255, 157, 157, 0.384);
 }
 #reset
 {
     position: relative;
     padding: 10px 20px 10px 20px;
     left: 70%;
-    top: 4%;
+    top: 14%;
     border-radius: 50px;
     border: 2px black solid;
     cursor: pointer;
+    background-color: rgba(255, 157, 157, 0.384);
 }
